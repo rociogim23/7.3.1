@@ -7,9 +7,9 @@ function showAlertError() {
 }
 
 
-var boton= document.getElementById("regBtn")
+let boton= document.getElementById("regBtn")
 boton.addEventListener("click",function(){
-var inputs= document.getElementsByTagName("input")
+let inputs= document.getElementsByTagName("input")
 
 
     for (var i=0; i<inputs.length; i++){ 
@@ -21,19 +21,19 @@ var inputs= document.getElementsByTagName("input")
 
 
 
-var contraseña= document.getElementById("password1")
+let contraseña= document.getElementById("password1")
 if (contraseña.value.length<5){
     showAlertError()
     return null
 }
 
-var contraseña2= document.getElementById("password2")
+let contraseña2= document.getElementById("password2")
 if (contraseña.value !== contraseña2.value){
     showAlertError()
     return null
 }
 
-var checkbox = document.getElementById("terminos")
+let checkbox = document.getElementById("terminos")
 console.log("checkbox", checkbox.checked)
 if (checkbox.checked === false){
     showAlertError()
@@ -41,6 +41,5 @@ if (checkbox.checked === false){
 }
 
 showAlertSuccess()
-
 
 })
